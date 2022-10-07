@@ -1,0 +1,14 @@
+.space-filler-small {
+    height: 50px;
+    width: 100%;
+}
+
+.space-filler-medium {
+    height: 150px;
+    width: 100%;
+}
+
+.space-filler-large {
+    height: 225px;
+    width: 100%;
+}
