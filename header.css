@@ -104,7 +104,7 @@ header {
 @media all and (max-width: 700px) {
     .background-photo h1 {
         font-size: 50px;
-        margin-top: 40%;
+        margin-top: 50%;
     }
 
     a, li {
@@ -113,5 +113,20 @@ header {
 
     .divider {
         height: 18px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .background-photo h1 {
+        font-size: 40px;
+        margin-top: 70%;
+    }
+
+    a, li {
+        font-size: 13px;
+    }
+
+    .divider {
+        height: 14px;
     }
 }
