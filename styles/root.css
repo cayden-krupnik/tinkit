@@ -1,12 +1,12 @@
 :root {
     font-size: 16px;
 
-    --txtColor: #ff1030;
+    --txtColor: #ff7030;
     --txtColor2: #ecf0f1;
     --txtColor3: #555555;
     --txtColor4: #000000;
     --bgColor: #ecf0f1;
-    --bgColor2: #ff1030;
+    --bgColor2: #ff7030;
 }
 
 * {

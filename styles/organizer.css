@@ -2,7 +2,7 @@
 @import url('root.css');
 
 .featured-title {
-    margin: 0rem 4rem;
+    margin-left: 2rem;
     color: var(--txtColor4);
     font-size: 3rem;
     font-weight: 600;
@@ -29,10 +29,10 @@
     justify-self: center;
     align-self: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: 20rem 1fr;
     grid-row-gap: 2rem;
     margin: 2rem 5rem 3rem 5rem;
-    width: 20rem;
+    width: 90%;
 }
 
 .organizer-image1 {
@@ -58,7 +58,7 @@
 .organizer-text {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% 7rem 10%;
 }
 
 .organizer-tag {

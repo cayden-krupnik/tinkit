@@ -51,10 +51,18 @@ header {
     justify-content: center;
     cursor: default;
     padding: .7rem;
+    height: 100%;
 }
 
 .logo {
     justify-content: left;
+    background-image: url(../images/Logo.png);
+    margin-left: 1rem;
+    width: 4rem;
+    background-size: 5rem;
+    background-repeat: no-repeat;
+    background-position-y: -.8rem;
+    cursor: pointer;
 }
 
 .account-links {
