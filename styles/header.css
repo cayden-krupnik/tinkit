@@ -11,7 +11,6 @@
 }
 
 header {
-    height: 100vh;
 }
 
 .header {
@@ -74,9 +73,5 @@ header {
 }
 
 .background-photo {
-    background-image: url("../images/HeaderPicture.png");
-    background-size: cover;
-    background-position-x: 50%;
-    background-attachment: fixed;
-    height: 100%;
+    width: 100%;
 }
