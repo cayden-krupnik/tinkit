@@ -1,12 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('root.css');
 
+.featured-title {
+    margin: 0rem 4rem;
+    color: var(--txtColor4);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.featured-title::before {
+    content: "";
+    display: inline-block;
+    width: .3rem;
+    height: 2.1rem;
+    margin-right: 9px;
+    background-color: var(--txtColor);
+}
+
+.featured {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-rows: auto;
+}
+
 .organizer {
     display: grid;
-    grid-template-columns: 400px 1fr;
-    grid-template-rows: 100%;
-    grid-column-gap: 2rem;
-    margin: 0rem 10rem;
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-row-gap: 2rem;
+    margin: 2rem 5rem 3rem 5rem;
+    width: 20rem;
 }
 
 .organizer-image1 {
@@ -44,7 +70,7 @@
 .organizer-tag::before {
     content: "";
     display: inline-block;
-    width: 3px;
+    width: .2rem;
     height: .8rem;
     margin-right: 3px;
     background-color: var(--txtColor);
@@ -52,7 +78,7 @@
 
 .organizer-title {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--txtColor4);
     text-decoration: none;
 }
@@ -81,21 +107,9 @@
 }
 
 @media (max-width: 950px) {
-    .organizer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 1fr;
-        grid-row-gap: 2rem;
-        margin: 0rem 5rem;
-    }
+
 }
 
 @media (orientation: portrait) {
-    .organizer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 1fr;
-        grid-row-gap: 2rem;
-        margin: 0rem 5rem;
-    }
+
 }
