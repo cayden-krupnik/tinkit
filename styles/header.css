@@ -1,50 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('root.css');
 
-:root {
-    --txtColor: #ecf0f1;
-    --bgColor: #ecf0f180;
-    --hvrTxtColor: #ff1030;
-    --brdrColor: #ecf0f1;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Ubuntu", sans-serif;
-}
-
-a, li {
+.navigation-links li a, .logo a, .account-links li a{
     text-decoration: none;
-    font-weight: 400;
-    font-size: 22px;
-    color: var(--txtColor);
-    padding: 5px 10px;
+    font-weight: 600;
+    color: var(--txtColor4);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 header {
-    height: 1080px;
+    height: 100vh;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: absolute;
     width: 100%;
+    position: fixed;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    background-color: var(--bgColor);
+}
+
+.header-lower {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(gray, transparent);
+}
+
+.logo-nav {
+    justify-content: start;
+}
+
+.navigation-nav {
+    justify-content: center;
+}
+
+.account-nav {
+    justify-content: right;
 }
 
 .logo, .account-links, .navigation-links{
     display: flex;
     align-content: center;
     justify-content: center;
-    cursor: pointer;
-    background: var(--bgColor);
-    border-radius: 25px;
-    border: solid;
-    border-width: 3px;
-    border-color: var(--brdrColor);
-    margin: 10px;
-    backdrop-filter: blur(4px);
+    cursor: default;
+    padding: .7rem;
+}
+
+.logo {
+    justify-content: left;
+}
+
+.account-links {
+    justify-content: right;
 }
 
 .logo a , .navigation-links li a, .account-links li a{
@@ -52,81 +66,17 @@ header {
 }
 
 .logo a:hover, .navigation-links li a:hover, .account-links li a:hover {
-    color: var(--hvrTxtColor)
+    color: var(--txtColor)
 }
 
 .navigation-links li, .account-links li {
     display: inline-block;
 }
 
-.divider {
-    background-color: var(--brdrColor);
-    padding: 5px 0px;
-    height: 26px;
-    width: 3px;
-}
-
 .background-photo {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
-    background: url(../images/HeaderPicture.png) repeat fixed 50%;
+    background-image: url("../images/HeaderPicture.png");
     background-size: cover;
-    background-position-y: -100px;
-    width: 100%;
-    height: 720px;
-    z-index: -1;
-}
-
-.background-photo h1 {
-    margin-top: 15%;
-    padding: 0px;
-    font-size: 150px;
-    color: var(--txtColor);
-    transition: all 250ms ease 0s;
-}
-
-@media all and (max-width: 1300px) {
-    .background-photo h1 {
-        font-size: 100px;
-        margin-top: 20%;
-    }
-}
-
-@media all and (max-width: 900px) {
-    .background-photo h1 {
-        font-size: 75px;
-        margin-top: 30%;
-    }
-}
-
-@media all and (max-width: 700px) {
-    .background-photo h1 {
-        font-size: 50px;
-        margin-top: 50%;
-    }
-
-    a, li {
-        font-size: 16px;
-    }
-
-    .divider {
-        height: 18px;
-    }
-}
-
-@media all and (max-width: 500px) {
-    .background-photo h1 {
-        font-size: 40px;
-        margin-top: 70%;
-    }
-
-    a, li {
-        font-size: 13px;
-    }
-
-    .divider {
-        height: 20px;
-    }
+    background-position-x: 50%;
+    background-attachment: fixed;
+    height: inherit;
 }
