@@ -4,37 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Tinkit Gear - Home</title>
+    <title>The Tinkit Gear</title>
 
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/space-filler.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="space-filler.css">
+    <link rel="stylesheet" href="organizer.css">
 </head>
 <body>
     <header>
         <section class="header">
-            <p class="logo"><a href="#">TTG</a></p>
-            <nav>
+            <nav class="logo-nav">
+                <p class="logo"><a href="#">TTG</a></p>
+            </nav>
+            <nav class="navigation-nav">
                 <ul class="navigation-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="divider"></li>
-                    <li><a href="pages/shop.html">Shop</a></li>
-                    <li class="divider"></li>
-                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
                 </ul>
             </nav>
-            <nav>
+            <nav class="account-nav">
                 <ul class="account-links">
                     <li><a href="#">Cart</a></li>
+                    <li><a href="#">Account</a></li>
                 </ul>
             </nav>
         </section>
-        <div class="background-photo">
-            <h1>The Tinkit Website</h1>
-        </div>
+        <div class="background-photo"></div>
     </header>
 
     <div class="space-filler-small"></div>
 
-    <p>Welcome to The Tinit Gear website.</p>
+    <section class="organizer-left">
+        <a href="#" class="organizer-image1"></a>
+        <section class="organizer-text">
+            <p class="organizer-tag">Product</p>
+            <div>
+                <p><a href="#" class="organizer-title">This would be the title.</a></p>
+                <p>This would be the body.</p>
+            </div>
+            <section class="organizer-lower">
+                <a href="#" class="organizer-CTA">View Product</a>
+                <p class="organizer-extra">$15.99</p>
+            </section>
+        </section>
+    </section>
+
+    <div class="space-filler-small"></div>
+
+    <section class="organizer-right">
+        <section class="organizer-text">
+            <p class="organizer-tag">Article</p>
+            <div>
+                <p><a href="#" class="organizer-title">This Would be the title.</a></p>
+                <p>This would be the body.</p>
+            </div>
+            <section class="organizer-lower">
+                <a href="#" class="organizer-CTA">View Article</a>
+                <p class="organizer-extra">Fishing Kit</p>
+            </section>
+        </section>
+        <a href="#" class="organizer-image2"></a>
+    </section>
+
+    <div class="space-filler-small"></div>
 </body>
 </html>
