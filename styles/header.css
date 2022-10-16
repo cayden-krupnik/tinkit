@@ -78,5 +78,5 @@ header {
     background-size: cover;
     background-position-x: 50%;
     background-attachment: fixed;
-    height: inherit;
+    height: 100%;
 }
