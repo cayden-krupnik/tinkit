@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('root.css');
 
-.organizer-left {
+.organizer {
     display: grid;
     grid-template-columns: 400px 1fr;
     grid-template-rows: 100%;
@@ -9,17 +9,9 @@
     margin: 0rem 10rem;
 }
 
-.organizer-right{
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    grid-template-rows: 100%;
-    grid-column-gap: 2rem;
-    margin: 0rem 10rem;
-}
-
 .organizer-image1 {
     background-image: url('HeaderPicture.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 25px;
@@ -29,16 +21,12 @@
 
 .organizer-image2 {
     background-image: url('HeaderPicture.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 25px;
     transition: all 750ms ease 0s;
     width: 100%;
-}
-
-.organizer-left:hover .organizer-image1, .organizer-right:hover .organizer-image2 {
-    background-size: 110%;
 }
 
 .organizer-text {
@@ -90,4 +78,14 @@
 .organizer-extra {
     align-self: center;
     justify-self: left;
+}
+
+@media (max-width: 800px) {
+    .organizer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
+        grid-row-gap: 2rem;
+        margin: 0rem 5rem;
+    }
 }

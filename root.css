@@ -20,10 +20,3 @@
 body {
     background-color: var(--bgColor);
 }
-
-@media (max-width: 500px)
-{
-    :root {
-        font-size: 5px;
-    }
-}
