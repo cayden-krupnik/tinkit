@@ -10,6 +10,10 @@
     cursor: pointer;
 }
 
+header {
+    height: 100vh;
+}
+
 .header {
     width: 100%;
     position: fixed;
@@ -70,5 +74,9 @@
 }
 
 .background-photo {
+    height: 100%;
     width: 100%;
+    background-image: url("../images/HeaderPicture.png");
+    background-position: center;
+    background-size: cover;
 }
