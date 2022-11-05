@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/space-filler.css">
     <link rel="stylesheet" href="styles/organizer.css">
+    <link rel="stylesheet" href="styles/cart.css">
     <script defer src="scripts/main.js"></script>
 </head>
 <body>
@@ -21,13 +22,13 @@
                 <nav class="navigation-nav">
                     <ul class="navigation-links">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="pages/store.html">Shop</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
                 </nav>
                 <nav class="account-nav">
                     <ul class="account-links">
-                        <li><a href="#">Cart</a></li>
+                        <li><a id="cart">Cart (0)</a></li>
                         <li><a href="#">Account</a></li>
                     </ul>
                 </nav>
@@ -36,6 +37,13 @@
         </section>
         <div class="background-photo"></div>
     </header>
+
+    <section class="cart-overlay" id="cart-overlay">
+        <div>
+            <p>Item</p>
+            <p>0</p>
+        </div>
+    </section>
 
     <div class="space-filler-small"></div>
 
@@ -61,7 +69,7 @@
             <section class="organizer-text">
                 <p class="organizer-tag">Product</p>
                 <div>
-                    <p class="organizer-title">Folding Hip Bag</p>
+                    <p class="organizer-title">Foraging Bag</p>
                     <p>A canvas bag that can be kept on your hip and unfolded to store materials and button right back up to keep them in.</p>
                 </div>
                 <section class="organizer-lower">

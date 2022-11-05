@@ -27,12 +27,6 @@ header {
     background-color: var(--bgColor);
 }
 
-.header-lower {
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(gray, transparent);
-}
-
 .logo-nav {
     justify-content: start;
 }
